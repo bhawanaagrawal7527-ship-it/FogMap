@@ -2,5 +2,6 @@ fastapi
 uvicorn
 python-multipart
 Pillow
-tensorflow-cpu
-numpy
+psycopg2-binary
+sqlalchemy
+tensorflow
