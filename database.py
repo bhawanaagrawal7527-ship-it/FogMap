@@ -11,6 +11,16 @@ if DATABASE_URL and DATABASE_URL.startswith("postgres://"):
 
 # Agar local testing ke liye URL na mile, toh fallback string (Aapki Neon URL)
 if not DATABASE_URL:
-    DATABASE_URL = "ABC"
+    DATABASE_URL = "abc"
 
 engine = create_engine(DATABASE_URL)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+Base = declarative_base()  # <--- Ye line hona bahut zaroori hai!
+
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
