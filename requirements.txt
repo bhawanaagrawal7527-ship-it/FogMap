@@ -4,4 +4,4 @@ python-multipart
 Pillow
 psycopg2-binary
 sqlalchemy
-tensorflow
+tensorflow-cpu
