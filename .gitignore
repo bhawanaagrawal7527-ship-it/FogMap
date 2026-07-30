@@ -8,3 +8,5 @@ Smog4000/
 __pycache__/
 
 fogmap_efficientnet_v2.keras
+
+psycopg2-binary
