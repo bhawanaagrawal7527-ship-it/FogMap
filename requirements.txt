@@ -4,5 +4,9 @@ python-multipart
 Pillow
 tensorflow-cpu==2.16.1
 numpy
+streamlit
+pandas
+plotly
+pydeck
 sqlalchemy
 psycopg2
